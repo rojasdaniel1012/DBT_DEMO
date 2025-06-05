@@ -1,0 +1,10 @@
+version: 1
+
+sources:
+  - name: flatfiles
+    database: dbt_demo  
+    schema: flatfiles  
+    config:
+      enabled: true
+    tables:
+      - name: marketing_data  # enabled
