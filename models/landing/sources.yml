@@ -1,0 +1,12 @@
+version: 1
+
+sources:
+  - name: flatfiles
+    database: dbt_demo
+    schema: flatfiles
+    description: Flatfiles Source System Ingested by any EL approach
+    config:
+      enabled: true
+    tables:
+      - name: marketing_data # enabled
+        description: Customer information from marketing data source
