@@ -1,3 +1,38 @@
 models:
   - name: customer
     description:  Curated Table for Marketing Customer Data
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+      - name: year_birth
+      - name: education_level
+      - name: marital_status
+      - name: income
+        tests:
+          - not_null
+      - name: kidhome
+      - name: teenhome
+      - name: recency
+      - name: mntwines
+      - name: mntfruits
+      - name: mntmeatproducts
+      - name: mntfishproducts
+      - name: mntsweetproducts
+      - name: mntgoldprods
+      - name: numdealspurchases
+      - name: numwebpurchases
+      - name: numcatalogpurchases
+      - name: numstorepurchases
+      - name: numwebvisitsmonth
+      - name: acceptedcmp3
+      - name: acceptedcmp4
+      - name: acceptedcmp5
+      - name: acceptedcmp1
+      - name: acceptedcmp2
+      - name: complain
+      - name: z_costcontact
+      - name: z_revenue
+      - name: response
+      - name: date

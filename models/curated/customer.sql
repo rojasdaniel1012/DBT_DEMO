@@ -13,7 +13,7 @@ with curated as (
 
     select * from 
 
-    {% if is_incremental()== true %}
+    {% if is_incremental() %}
 
     {{target.database}}.{{target.schema}}.strm_customer
 
